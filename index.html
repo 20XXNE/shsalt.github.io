@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Cristian Ramirez - Developer and Designer</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+    <link href="./styles.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="top"></div>
+    <div id="header">
+        <ul class="pages">                
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#works">WORKS</a></li>
+        </ul>
+    </div>
+    <div id="intro">
+        <div id="intro-text">
+        <h1>I'm Cristian.</h1>
+        <h1>Lover of programming, the web, & design.</h1>
+        <h1>Come and see what I can do for you.</h1>
+        </div>
+    </div>
+    <div id="works">
+        <div class="content">
+            <h2>Vegas Places</h2>
+            <h3>Congressional App Challenge Submission</h3>
+            <a href="https://github.com/shsalt/vegas-places"><img src="assets/images/vegasplaces-icon.png"></a>
+            <p>Project Lead/Lead Programmer</p>
+        </div>
+        <div class="content">
+            <h2>Fun Camp, Inc.</h2>
+            <h3>Non-profit website</h3>
+            <a href="https://github.com/shsalt/vegas-places"><img src="assets/images/vegasplaces-icon.png"></a>
+            <p>Project Lead</p>
+        </div> 
+        <div class="content">
+            <h2>Rebrand for a Grand</h2>
+            <h3>Qualifyor's Campaign and Contest</h3>
+            <a href="https://github.com/shsalt/vegas-places"><img src="assets/images/vegasplaces-icon.png"></a>
+            <p>Assistant Marketing</p>
+        </div>
+    </div>
+    <div id="skills">
+        <h1>What am I good at?</h1>
+        <h1>Take a look.</h1> 
+        <ul id="dev">
+            <li>3 Years' Experience in JavaScript</li>
+            <li>2 Years' Experience in HTML5/CSS3</li>
+            <li>1 Year's Experience in Python and C</li>
+        </ul>
+        <ul id="dev">
+            <li>3 Year's Experience in Adobe Photoshop & Illustrator</li>
+            <li>2 Year's Experience in Adobe Dreamweaver & Flash</li>
+            <li>ACA Certification in Adobe Illustrator & Dreamweaver</li>
+        </ul>
+    </div>
+    <div id="about">
+        <h1>I'm a problem solver.</h1>
+        <p>test</p>
+    </div>
+    
+    
+    <script>
+    //smooth scrolling function here
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+    </script>
+</body>

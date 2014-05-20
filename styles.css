@@ -1,0 +1,129 @@
+html{
+    -webkit-font-smoothing: anitaliased;
+    height: 100%;
+}
+body{
+	font-family: "Source Code Pro";
+	padding: 0;
+	margin: 0;
+	height: 100%;
+    background-color: #FFFFFF;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: #FFFFFF;
+    transition: color 0.4s;
+}
+a:hover{
+    color: #EBFF33;
+}
+li{
+	list-style: none;
+    font-family: "Source Sans Pro";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+li a{
+    margin-right: 20px;
+    float: right;
+}
+#header{
+	width: 100%;
+	height: 45px;
+	overflow: hidden;
+	margin: 0;
+	background-color: #FF606E;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+p{
+    font-family: "Source Code Pro";
+    font-weight: 300;
+    font-size: 1em;
+    margin: 0 auto;
+}
+h1{
+    font-family: "Source Sans Pro";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 2.75em;
+}
+h2{
+    font-family: "Source Sans Pro";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 2em;
+    margin: 0;
+}
+h3{
+    font-family: "Source Sans Pro";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin: 0;
+}
+#intro{
+    margin: 0 auto;
+    position: relative;
+	height: 100vh;
+    color: #FFFFFF;
+    background-color: #262C3A;
+}
+#intro h1{
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+#works{
+    height: 100vh;
+    width: 100%;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+.content{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 25%;
+    background-color: #517398;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+}
+.content img{
+    max-width: 100%;
+    opacity: 0.5;
+    transition: opacity 0.4s;
+}
+.content img:hover{
+    opacity: 1;
+}
+#skills{
+    height: 100vh;
+    width: 100%;
+    background-color: #262C3A;
+    text-align: center;
+    color: #FFFFFF;
+}
+#skills h1{
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+ul#dev{
+    position: relative;
+    top: 200px;
+    position: inline;
+}
+#about{
+    height: 100vh;
+    width: 100%;
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #000000;
+}
