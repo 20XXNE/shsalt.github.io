@@ -1,90 +1,34 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<title>Cristian Ramirez - Developer and Designer</title>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
-    <link href="./styles.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-</head>
-<body>
-    <div id="top"></div>
-    <div id="header">
-        <ul class="pages">                
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#works">WORKS</a></li>
-        </ul>
-    </div>
-    <div id="intro">
-        <div id="intro-text">
-        <h1>I'm Cristian.</h1>
-        <h1>Lover of programming, the web, & design.</h1>
-        <h1>Come and see what I can do for you.</h1>
-        </div>
-    </div>
-    <div id="works">
-        <div class="content">
-            <h2>Vegas Places</h2>
-            <h3>Congressional App Challenge Submission</h3>
-            <a href="https://github.com/shsalt/vegas-places"><img src="assets/images/vegasplaces-icon.png"></a>
-            <p>Project Lead/Lead Programmer</p>
-        </div>
-        <div class="content">
-            <h2>Fun Camp, Inc.</h2>
-            <h3>Non-profit website</h3>
-            <a href="https://github.com/shsalt/vegas-places"><img src="assets/images/vegasplaces-icon.png"></a>
-            <p>Project Lead</p>
-        </div> 
-        <div class="content">
-            <h2>Rebrand for a Grand</h2>
-            <h3>Qualifyor's Campaign and Contest</h3>
-            <a href="https://github.com/shsalt/vegas-places"><img src="assets/images/vegasplaces-icon.png"></a>
-            <p>Assistant Marketing</p>
-        </div>
-    </div>
-    <div id="skills">
-        <h1>What am I good at?</h1>
-        <h1>Take a look.</h1> 
-        <ul id="dev">
-            <li>3 Years' Experience in JavaScript</li>
-            <li>2 Years' Experience in HTML5/CSS3</li>
-            <li>1 Year's Experience in Python and C</li>
-        </ul>
-        <ul id="dev">
-            <li>3 Year's Experience in Adobe Photoshop & Illustrator</li>
-            <li>2 Year's Experience in Adobe Dreamweaver & Flash</li>
-            <li>ACA Certification in Adobe Illustrator & Dreamweaver</li>
-        </ul>
-    </div>
-    <div id="about">
-        <h1>I'm a problem solver.</h1>
-        <p>test</p>
-        <div class="links">
-            <li><a href="https://github.com/shsalt"><i class="fa fa-github-alt fa-3x"></i></a></li> 
-            <li><i class="fa fa-linkedin-square fa-3x"></i></li>
-            <li><a href="skype:cristian.ramirez96?add"><i class="fa fa-skype fa-3x"></i></a></li>
-            <li><a href="mailto:shepards.alt@gmail.com" target="_top"><i class="fa fa-envelope fa-3x"></i></a></li>
-    </div>
-    </div>    
-    <script>
-    //smooth scrolling function here
-	$(function() {
-	  $('a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top
-	        }, 1000);
-	        return false;
-	      }
-	    }
-	  });
-	});
-    </script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Web Portfolio: Cristian Ramirez</title>
+                <link href="http://fonts.googleapis.com/css?family=Lato:100" rel='stylesheet' type='text/css'>
+		<link href="./styles/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet">
+                <link href="./styles/styles.css" rel="stylesheet">      
+	</head>
+        <body>
+	<div id="container">
+		<div id="header">
+                        <h1>Cristian Ramirez</h1>
+			<p>Designer, Developer</p>
+                        <div id="nav">
+                                <ul>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="capstone.html">Capstone</a></li>
+                                        <li><a href="projects.html">Projects</a></li>
+                                        <li><a href="resume.html">Resume</a></li>
+                                        <li><a href="index.html">Home</a></li>
+                                </ul>
+                        </div>
+                </div>
+        <div class="info">I am currently a student in the Web Development program at Southwest CTA and have just entered <a href="https://www.qualifyor.com">Qualifyor</a>, a "hire learning" program".  I have skills in programs such as the Adobe Creative Suite and a background in soft skills like leadership and teamwork.</div>
+	<div class="links">
+		<li><a href="https://github.com/shsalt"><i class="fa fa-github-alt fa-3x"></i></a></li> 
+		<li><i class="fa fa-linkedin-square fa-3x"></i></li>
+		<li><a href="skype:cristian.ramirez96?add"><i class="fa fa-skype fa-3x"></i></a></li>
+		<li><a href="mailto:shepards.alt@gmail.com" target="_top"><i class="fa fa-envelope fa-3x"></i></a></li>
+	</div>
+	</body>
+</html>
