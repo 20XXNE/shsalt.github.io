@@ -127,3 +127,20 @@ ul#dev{
     text-align: center;
     color: #000000;
 }
+.links li{
+	list-style: none;
+	display: inline;
+}
+.links{
+	text-align: center;
+	position: relative;
+}
+.fa{
+	margin: 0.3em;
+	opacity: 0.4;
+	transition: opacity 0.4s;
+	display: inline-block;
+}
+.fa:hover{
+	opacity: 1;
+}
