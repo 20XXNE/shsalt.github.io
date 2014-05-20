@@ -137,5 +137,11 @@ ul#dev{
 }
 .fa{
 	margin: 0.3em;
-	opacity: 0.4;
+	opacity: 0.4;	
+        transition: opacity 0.4s;
+	display: inline-block;
 }
+.fa:hover{
+	opacity: 1;
+}
+
