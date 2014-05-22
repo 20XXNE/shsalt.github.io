@@ -18,6 +18,9 @@ a{
 a:hover{
     color: #EBFF33;
 }
+ul.pages{
+    text-align: center;
+}
 li{
 	list-style: none;
     font-family: "Source Sans Pro";
@@ -89,6 +92,10 @@ h3{
     -webkit-column-gap:40px; /* Chrome, Safari, Opera */
     -moz-column-gap:40px; /* Firefox */
     column-gap:40px;
+    padding-top: 45px; 
+    margin-top: -45px;
+    display: inline-block;
+    vertical-align: top;
 }
 .content{
     position: relative;
