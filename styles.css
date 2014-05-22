@@ -80,6 +80,7 @@ h3{
 }
 #works{
     width: 100%;
+    margin: 0 auto;
     background-color: #FFFFFF;
     text-align: center;
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
@@ -88,14 +89,12 @@ h3{
     -webkit-column-gap:40px; /* Chrome, Safari, Opera */
     -moz-column-gap:40px; /* Firefox */
     column-gap:40px;
-    
 }
 .content{
     position: relative;
     margin: 0 auto;
-    margin-top: 15px;
     margin-bottom: 15px;
-    width: 25%;
+    width: 400px;
     background-color: #517398;
     color: #FFFFFF;
     text-align: center;
@@ -135,3 +134,21 @@ ul#dev{
     text-align: center;
     color: #000000;
 }
+.links li{
+	list-style: none;
+	display: inline;
+}
+.links{
+	text-align: center;
+	position: relative;
+}
+.fa{
+	margin: 0.3em;
+	opacity: 0.4;	
+        transition: opacity 0.4s;
+	display: inline-block;
+}
+.fa:hover{
+	opacity: 1;
+}
+
