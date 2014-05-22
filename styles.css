@@ -84,7 +84,7 @@ h3{
 #works{
     width: 100%;
     margin: 0 auto;
-    background-color: #FFFFFF;
+    background-color: #A0FB71;
     text-align: center;
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
@@ -137,9 +137,13 @@ ul#dev{
 #about{
     height: 100vh;
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: #A0FB71;
     text-align: center;
     color: #000000;
+    padding-top: 45px; 
+    margin-top: -45px;
+    display: inline-block;
+    vertical-align: top;
 }
 .links li{
 	list-style: none;
