@@ -11,23 +11,22 @@ body{
 	height: 100%;
     background-color: #FFFFFF;
 }
-a{
+li, h1, h2, h3{
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    font-style: italic;
+}
+#header a{
     text-decoration: none;
     display: inline-block;
     color: #FFFFFF;
     transition: color 0.4s;
 }
-a:hover{
+#header a:hover{
     color: #EBFF33;
-}
-ul.pages{
-    text-align: center;
 }
 li{
 	list-style: none;
-    font-family: "Source Sans Pro";
-    font-style: italic;
-    font-weight: 300;
     font-size: 1.5em;
 }
 li a{
@@ -40,22 +39,13 @@ p{
     margin: 0 auto;
 }
 h1{
-    font-family: "Source Sans Pro";
-    font-style: italic;
-    font-weight: 300;
     font-size: 2.75em;
 }
 h2{
-    font-family: "Source Sans Pro";
-    font-style: italic;
-    font-weight: 300;
     font-size: 2em;
     margin: 0;
 }
 h3{
-    font-family: "Source Sans Pro";
-    font-style: italic;
-    font-weight: 300;
     font-size: 1.5em;
     margin: 0;
 }
@@ -102,11 +92,13 @@ h3{
     column-gap:40px;
     }
 #skills{
-    height: 100vh;
+    height: auto;
+    min-height: 100% !important;
     width: 100%;
     background-color: #262C3A;
     text-align: center;
     color: #FFFFFF;
+    display: block;
 }
 
     #skills h1{
@@ -121,12 +113,12 @@ h3{
         position: inline;
     }
 #about{
-    height: 100vh;
     width: 100%;
     background-color: #58F8AB;
     text-align: center;
     color: #000000;
     padding-top: 45px; 
+    padding-bottom: 100px;
     margin-top: -45px;
     display: inline-block;
     vertical-align: top;
@@ -134,6 +126,16 @@ h3{
     #about p{
         max-width: 50%;
     }
+#contact{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 45px; 
+    margin-top: -45px;
+    width: 100%;
+    height: 100vh;
+    color: #FFFFFF;
+    background-color: #262C3A;
+}
 /* details and items and such */
 .content{
     position: relative;
@@ -153,19 +155,22 @@ h3{
 .content img:hover{
     opacity: 1;
 }
+/* contact links */
+.links{
+    text-align: center;
+}
 .links li{
-	list-style: none;
 	display: inline;
 }
-.links{
-	text-align: center;
-	position: relative;
-}
+.links a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0 auto;
+}   
 .fa{
-	margin: 0.3em;
+    margin: 0 auto;
 	opacity: 0.4;	
     transition: opacity 0.4s;
-	display: inline-block;
 }
 .fa:hover{
 	opacity: 1;
