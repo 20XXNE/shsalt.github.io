@@ -63,7 +63,7 @@ h3{
 #intro{
     margin: 0 auto;
     position: relative;
-	height: 100vh;
+	min-height: 100vh;
     color: #FFFFFF;
     background-color: #262C3A;
 }
@@ -132,13 +132,13 @@ h3{
     padding-top: 45px; 
     margin-top: -45px;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     color: #FFFFFF;
     background-color: #262C3A;
 }
 /* details and items and such */
 .content{
-    position: relative;
+    position: relative; 
     margin: 0 auto;
     margin-bottom: 15px;
     width: 400px;
@@ -155,20 +155,27 @@ h3{
 .content img:hover{
     opacity: 1;
 }
-/* contact links */
+
+/* contact links (work in progress) */
 .links{
     text-align: center;
+    font-size: 2em;
 }
 .links li{
 	display: inline;
 }
 .links a{
     text-decoration: none;
-    color: #FFFFFF;
+    color: #EBFF33;
     margin: 0 auto;
+    transition: color 0.4s
 }   
+.links a:hover{
+    color: #FFFFFF;
+}
 .fa{
     margin: 0 auto;
+    text-align: center;
 	opacity: 0.4;	
     transition: opacity 0.4s;
 }
