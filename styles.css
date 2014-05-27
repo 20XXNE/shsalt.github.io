@@ -155,7 +155,17 @@ h3{
 .content img:hover{
     opacity: 1;
 }
-
+#more{
+    background-color: #FF606E;
+    margin: 0 auto;
+    text-align: center;
+    width: 150px;
+    padding: 20px;
+    transition: background-color 0.4s;
+}
+#more:hover{
+    background-color: #EBFF33;
+}
 /* contact links (work in progress) */
 .links{
     text-align: center;
