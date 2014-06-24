@@ -4,7 +4,7 @@ html{
     height: 100%;
 }
 body{
-	font-family: "Source Code Pro";
+	font-family: "Open Sans";
     font-weight: 300;
 	padding: 0;
 	margin: 0;
@@ -15,19 +15,24 @@ li, h1, h2, h3{
     font-family: "Source Sans Pro";
     font-weight: 300;
     font-style: italic;
+} 
+@media (max-width: 480px){
+    #contact h1, #contact h2, #contact p{
+        font-size: 1.5em;
+    }
 }
-#header a{
+#header a, #skills a{
     text-decoration: none;
     display: inline-block;
     color: #FFFFFF;
     transition: color 0.4s;
 }
-#header a:hover{
+#header a:hover, #skills a:hover, nav a:hover{
     color: #EBFF33;
 }
 li{
 	list-style: none;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 li a{
     margin-right: 20px;
@@ -49,6 +54,26 @@ h3{
     font-size: 1.5em;
     margin: 0;
 }
+/* mobile nav */
+nav{
+    background-color: #FF606E;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+@media (min-width: 565px){
+    nav{
+        display: none;
+    }
+    
+}
+nav a{
+    color: #000000;
+    transition: color 0.4s;
+    display: block;
+}
 /* main divs */
 #header{
 	width: 100%;
@@ -59,6 +84,11 @@ h3{
     position: fixed;
     top: 0;
     z-index: 2;
+}
+@media (max-width: 565px;){
+    #header{
+        display: none;
+    }
 }
 #intro{
     margin: 0 auto;
@@ -76,7 +106,7 @@ h3{
 #works{
     width: 100%;
     margin: 0 auto;
-    background-color: #58F8AB;
+    background-color: #FFFFFF;
     text-align: center;
     padding-top: 45px; 
     margin-top: -45px;
@@ -99,27 +129,27 @@ h3{
     text-align: center;
     color: #FFFFFF;
     display: block;
+    padding-top: 45px; 
+    margin-top: -45px;
+    padding-bottom: 45px;
 }
 
     #skills h1{
         position: relative;
-        top: 100px;
         margin: 0 auto;
         text-align: center;
     }
     ul#dev{
         position: relative;
-        top: 200px;
         position: inline;
     }
 #about{
     width: 100%;
-    background-color: #58F8AB;
+    background-color: #FFFFFF;
     text-align: center;
     color: #000000;
     padding-top: 45px; 
     padding-bottom: 100px;
-    margin-top: -45px;
     display: inline-block;
     vertical-align: top;
 }
@@ -162,16 +192,23 @@ h3{
     margin: 0 auto;
     margin-bottom: 15px;
     width: 400px;
-    background-color: #517398;
+    background-color: #00DDD8;
     color: #FFFFFF;
     text-align: center;
     padding: 15px;
-    max-height: 150px;
+    min-height: 150px;
+}
+@media (min-width: 992px) and (max-width: 1214px){
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 .content img{
     max-width: 100%;
     opacity: 0.5;
     transition: opacity 0.4s;
+    margin-top: 5px;
 }
 .content img:hover{
     opacity: 1;
@@ -180,17 +217,18 @@ h3{
     background-color: #FF606E;
     margin: 0 auto;
     text-align: center;
-    width: 150px;
-    padding: 20px;
-    transition: background-color 0.4s;
+    padding: 15px;
+    transition: background-color 0.4s, color 0.35s;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 #more h3{
     text-decoration: none;
 }
 #more:hover{
     background-color: #EBFF33;
+    color: #000000;
 }
-
 
 /* contact links (work in progress) */
 .links{
@@ -200,52 +238,25 @@ h3{
 .links li{
 	display: inline;
 }
-.links a{
+.links a, #resume{
     text-decoration: none;
     color: #EBFF33;
     margin: 0 auto;
     transition: color 0.4s
 }   
-.links a:hover{
+.links a:hover, #resume:hover{
     color: #FFFFFF;
 }
 .fa{
     margin: 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
-	opacity: 0.4;	
+	opacity: 0.5;	
     transition: opacity 0.4s;
+    color: #00DDD8;
 }
 .fa:hover{
 	opacity: 1;
-}
-
-/*  portfolio.html styles */
-#columns-port{
-    padding-bottom: 50px;
-    -webkit-column-count: 2; 
-    -moz-column-count: 2; 
-    column-count: 2;
-    -webkit-column-gap:50px; 
-    -moz-column-gap:50px; 
-    column-gap:50px;
-    }
-.content-port{
-    position: relative; 
-    margin: 0 auto;
-    margin-bottom: 15px;
-    width: 400px;
-    background-color: #517398;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 15px;
-    max-height: 150px;
-}
-.content-port img{
-    max-width: 100%;
-    opacity: 0.5;
-    transition: opacity 0.4s;
-}
-.content-port img:hover{
-    opacity: 1;
 }
 
