@@ -93,10 +93,9 @@ nav a{
 #intro{
     margin: 0 auto;
     position: relative;
-	min-height: 100%;
+	min-height: 100vh;
     color: #FFFFFF;
     background-color: #262C3A;
-    padding-bottom: 16em;
 }
     #intro h1{
         position: relative;
