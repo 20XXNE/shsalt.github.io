@@ -93,9 +93,10 @@ nav a{
 #intro{
     margin: 0 auto;
     position: relative;
-	min-height: 100vh;
+	min-height: 100%;
     color: #FFFFFF;
     background-color: #262C3A;
+    padding-bottom: 16em;
 }
     #intro h1{
         position: relative;
@@ -212,6 +213,11 @@ nav a{
 }
 .content img:hover{
     opacity: 1;
+}
+@media (max-width: 1024px){
+    .content img{
+        opacity: 1;
+    }
 }
 #more{
     background-color: #FF606E;
