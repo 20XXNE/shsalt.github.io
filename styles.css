@@ -206,11 +206,6 @@ nav a{
         margin-right: 10px;
     }
 }
-@media (max-width: 1024px){ /* tablet size */
-    .content img{
-        opacity: 1;
-    }
-}
 .content img{
     max-width: 100%;
     opacity: 0.5;
@@ -220,7 +215,6 @@ nav a{
 .content img:hover{
     opacity: 1;
 }
-
 #more{
     background-color: #FF606E;
     margin: 0 auto;
@@ -267,4 +261,11 @@ nav a{
 .fa:hover{
 	opacity: 1;
 }
-
+@media (max-width: 1024px){ /* tablet size */
+    .content img{
+        opacity: 1;
+    }
+    .fa{
+        opacity: 1;
+    }
+}
