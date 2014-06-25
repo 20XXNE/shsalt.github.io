@@ -93,7 +93,8 @@ nav a{
 #intro{
     margin: 0 auto;
     position: relative;
-	min-height: 100vh;
+	min-height: 100%;
+    padding-bottom: 15em;
     color: #FFFFFF;
     background-color: #262C3A;
 }
@@ -162,7 +163,8 @@ nav a{
     padding-top: 45px; 
     margin-top: -45px;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
+    padding-bottom: 15em;
     color: #FFFFFF;
     background-color: #262C3A;
 }
@@ -207,10 +209,6 @@ nav a{
 @media (max-width: 1024px){ /* tablet size */
     .content img{
         opacity: 1;
-    }
-    #intro, #contact{
-        min-width: 100%;
-        padding-bottom: 15em;
     }
 }
 .content img{
