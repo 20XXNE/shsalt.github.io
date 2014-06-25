@@ -200,7 +200,7 @@ nav a{
     text-align: center;
     padding: 15px;
     min-height: 221px;
-}
+}       
 @media (min-width: 992px) and (max-width: 1214px){
     .content{
         margin-left: 10px;
