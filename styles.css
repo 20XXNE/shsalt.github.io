@@ -97,12 +97,12 @@ nav a{
     color: #FFFFFF;
     background-color: #262C3A;
 }
-    #intro h1{
+#intro h1{
         position: relative;
         top: 100px;
         margin: 0 auto;
-        text-align: center;
-    }
+        text-align: center; 
+}
 #works{
     width: 100%;
     margin: 0 auto;
@@ -204,6 +204,15 @@ nav a{
         margin-right: 10px;
     }
 }
+@media (max-width: 1024px){ /* tablet size */
+    .content img{
+        opacity: 1;
+    }
+    #intro, #contact{
+        width: 100%;
+        padding-bottom: 15em;
+    }
+}
 .content img{
     max-width: 100%;
     opacity: 0.5;
@@ -213,11 +222,7 @@ nav a{
 .content img:hover{
     opacity: 1;
 }
-@media (max-width: 1024px){
-    .content img{
-        opacity: 1;
-    }
-}
+
 #more{
     background-color: #FF606E;
     margin: 0 auto;
