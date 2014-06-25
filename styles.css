@@ -62,6 +62,7 @@ nav{
     top: 0;
     z-index: 2;
     width: 100%;
+    overflow: hidden;
 }
 @media (min-width: 565px){
     nav{
@@ -94,7 +95,7 @@ nav a{
     margin: 0 auto;
     position: relative;
 	min-height: 100%;
-    padding-bottom: 15em;
+    padding-bottom: 20em;
     color: #FFFFFF;
     background-color: #262C3A;
 }
@@ -164,7 +165,7 @@ nav a{
     margin-top: -45px;
     width: 100%;
     min-height: 100%;
-    padding-bottom: 15em;
+    padding-bottom: 20em;
     color: #FFFFFF;
     background-color: #262C3A;
 }
