@@ -95,7 +95,7 @@ nav a{
     margin: 0 auto;
     position: relative;
 	min-height: 100%;
-    padding-bottom: 20em;
+    padding-bottom: 25em;
     color: #FFFFFF;
     background-color: #262C3A;
 }
@@ -194,7 +194,6 @@ nav a{
     position: relative; 
     margin: 0 auto;
     margin-bottom: 15px;
-    width: 400px;
     background-color: #00DDD8;
     color: #FFFFFF;
     text-align: center;
