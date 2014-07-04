@@ -169,6 +169,9 @@ nav a{
     color: #FFFFFF;
     background-color: #262C3A;
 }
+#mc_embed_signup{
+    color: #000000;
+}
 #portfolio{
     height: auto;
     min-height: 100% !important;
