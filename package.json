@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shsalt/shsalt.github.io.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Cristian Ramirez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shsalt/shsalt.github.io/issues"
+  },
+  "homepage": "https://github.com/shsalt/shsalt.github.io"
+}
