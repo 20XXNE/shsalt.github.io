@@ -1,0 +1,60 @@
+//imports
+
+@import 'normalize';
+
+
+//mixins
+
+
+
+//variables
+
+$white: #FFFFFF;
+
+//fonts
+
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url('../fonts/SourceSansPro-Regular.ttf')
+}
+
+@font-face{
+    font-family: "Source Sans Pro Light";
+    src: url('../fonts/SourceSansPro-Light.ttf')
+}
+
+//boilerplate
+
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    color: $white;
+    background-color: $white;
+    font-family: "Source Sans Pro Light";
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+div{
+    overflow: hidden;
+}
+
+/* main stylesheet */
+#top{
+    height: 75px;
+    
+    nav{
+        max-width: 1000px;
+        margin: 0 auto;
+        
+        li{
+            display: inline-block;
+        }
+    }
+}
+
+/* media queries */
+
