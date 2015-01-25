@@ -424,7 +424,7 @@ body {
   width: 100%;
   overflow: hidden;
   margin: 0;
-  position: fixed;
+  position: top;
 }
 #head-bar nav {
   margin: 0 auto;
