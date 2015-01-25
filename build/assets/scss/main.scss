@@ -10,6 +10,8 @@
 //variables
 
 $white: #FFFFFF;
+$black: #000000;
+
 
 //fonts
 
@@ -38,23 +40,61 @@ body {
   width: device-width;
 }
 
-div{
-    overflow: hidden;
-}
-
 /* main stylesheet */
-#top{
-    height: 75px;
-    
+#head-bar{
+    height: 65px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    width: 100%;
+	overflow: hidden;
+	margin: 0;
+    position: fixed;
+
     nav{
-        max-width: 1000px;
         margin: 0 auto;
+        text-align: right;
+        position: relative;
+        bottom: 65px;
         
         li{
             display: inline-block;
+            margin: 0 15px;
         }
     }
 }
+
+.text-center{
+    margin: 0 auto;
+    text-align: center;
+    
+    h1{
+      font-size: 3.5em;
+    }
+    
+    h2{
+        font-size: 2em;
+    }
+}
+
+header{
+    background: url("../img/header.png") no-repeat center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 750px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    
+    .text-center{
+        @extend .text-center;
+        position: relative;
+        top: 100px;
+    }
+    
+}
+
+
 
 /* media queries */
 

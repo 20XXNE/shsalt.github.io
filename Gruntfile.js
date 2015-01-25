@@ -13,12 +13,12 @@ module.exports = function(grunt) {
                 svgoPlugins: [{ removeViewBox: false }],
                 progressive: true
             },
-			files: {
-				'assets/img/*.png': 'build/assets/img/*.png',
-				'assets/img/*.jpg': 'build/assets/img/*.jpg',
-				'assets/img/*.gif': 'build/assets/img/*.gif',
-                'assets/img/*.svg': 'build/assets/img/*.svg'   
-			}
+            files: [{
+                expand: true,                  // Enable dynamic expansion
+                cwd: 'build/',                   // Src matches are relative to this path
+                src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+                dest: 'assets/img'                  // Destination path prefix
+			}]
 		},
         font_optimizer: {
             build: {

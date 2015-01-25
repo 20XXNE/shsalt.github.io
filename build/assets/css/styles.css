@@ -416,20 +416,51 @@ body {
 @-ms-viewport {
   width: device-width;
 }
-div {
+/* main stylesheet */
+#head-bar {
+  height: 65px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  width: 100%;
   overflow: hidden;
+  margin: 0;
+  position: fixed;
+}
+#head-bar nav {
+  margin: 0 auto;
+  text-align: right;
+  position: relative;
+  bottom: 65px;
+}
+#head-bar nav li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
-/* main stylesheet */
-#top {
-  height: 75px;
+.text-center, header .text-center {
+  margin: 0 auto;
+  text-align: center;
 }
-#top nav {
-  max-width: 1000px;
+.text-center h1 {
+  font-size: 3.5em;
+}
+.text-center h2 {
+  font-size: 2em;
+}
+
+header {
+  background: url("../img/header.png") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 750px;
+  background-repeat: no-repeat;
   margin: 0 auto;
 }
-#top nav li {
-  display: inline-block;
+header .text-center {
+  position: relative;
+  top: 100px;
 }
 
 /* media queries */
