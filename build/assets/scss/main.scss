@@ -11,7 +11,8 @@
 
 $white: #FFFFFF;
 $black: #000000;
-
+$dark-red: #533841;
+$light-red: #855967;
 
 //fonts
 
@@ -31,7 +32,7 @@ body {
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
-    color: $white;
+    color: $black;
     background-color: $white;
     font-family: "Source Sans Pro Light";
 }
@@ -48,7 +49,8 @@ body {
     width: 100%;
 	overflow: hidden;
 	margin: 0;
-    position: top;
+    position: fixed;
+    top: 0;
 
     nav{
         margin: 0 auto;
@@ -59,21 +61,25 @@ body {
         li{
             display: inline-block;
             margin: 0 15px;
+            color: $white;
         }
     }
+}
+
+h1{
+    font-size: 3.5em;
+    font-family: "Source Sans Pro Light";
+}
+    
+h2{
+        font-size: 2em;
 }
 
 .text-center{
     margin: 0 auto;
     text-align: center;
     
-    h1{
-      font-size: 3.5em;
-    }
     
-    h2{
-        font-size: 2em;
-    }
 }
 
 header{
@@ -82,19 +88,34 @@ header{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 750px;
+    height: 768px;
     background-repeat: no-repeat;
     margin: 0 auto;
+    position: relative;
+    bottom: 65px;
+    color: $white;
     
     .text-center{
         @extend .text-center;
         position: relative;
-        top: 100px;
+        top: 200px;
     }
     
 }
 
-
+.text-block{
+    margin: 0 auto;
+    max-width: 60%;
+}
 
 /* media queries */
 
+@media (max-width: 480px){
+    
+    #headbar{
+        display: none;
+        li{
+            margin: 0 2.5% 0 2.5%;
+        }
+    }
+}
