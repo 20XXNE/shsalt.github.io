@@ -1,5 +1,6 @@
 //imports
 @import 'normalize';
+@import 'toolkit';
 //mixins
 
 //variables
@@ -23,7 +24,7 @@ $light-red: #855967;
 body {
 	margin: 0;
 	padding: 0;
-	-webkit-font-smoothing: antialiased;
+	@include font-smoothing;
 	color: $black;
 	background-color: $white;
 	font-family: "Source Sans Pro Light";
