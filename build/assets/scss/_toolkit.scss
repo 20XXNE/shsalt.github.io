@@ -51,3 +51,12 @@
 @function em($target, $context: $base__font-size) {
 	@return ($target / $context) * 1em;
 }
+
+// Background Size
+
+@mixin background-size($size: cover) {
+	-webkit-background-size: $size;
+	-moz-background-size: $size;
+	-o-background-size: $size;
+	background-size: $size;
+}

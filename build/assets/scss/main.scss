@@ -1,70 +1,23 @@
 //imports
+@import 'config';
 @import 'normalize';
+@import "bourbon/bourbon";
 @import 'toolkit';
-//mixins
-
-//variables
-$white: #FFFFFF;
-$black: #000000;
-$dark-red: #533841;
-$light-red: #855967;
-
-//fonts
-@font-face {
-	font-family: "Source Sans Pro";
-	src: url('../fonts/SourceSansPro-Regular.ttf')
-}
-
-@font-face {
-	font-family: "Source Sans Pro Light";
-	src: url('../fonts/SourceSansPro-Light.ttf')
-}
+@import 'nav';
 
 //boilerplate
 body {
-	margin: 0;
-	padding: 0;
 	@include font-smoothing;
 	color: $black;
 	background-color: $white;
-	font-family: "Source Sans Pro Light";
+	font-family: $ssp-light;
+	font-size: $base-font-size;
 }
 
 @-ms-viewport {
 	width: device-width;
 }
-/* main stylesheet */
 
-#head-bar {
-	height: 65px;
-	background-color: rgba(0, 0, 0, 0.3);
-	z-index: 2;
-	width: 100%;
-	overflow: hidden;
-	margin: 0;
-	position: fixed;
-	top: 0;
-	nav {
-		margin: 0 auto;
-		text-align: right;
-		position: relative;
-		bottom: 65px;
-		li {
-			display: inline-block;
-			margin: 0 15px;
-			color: $white;
-		}
-	}
-}
-
-h1 {
-	font-size: 3.5em;
-	font-family: "Source Sans Pro Light";
-}
-
-h2 {
-	font-size: 2em;
-}
 
 .text-center {
 	margin: 0 auto;
@@ -77,36 +30,54 @@ h2 {
 	width: 100%;
 }
 
-#work {
-	header {
-		background: url("../img/header.png") no-repeat center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		height: 768px;
-		background-repeat: no-repeat;
-		margin: 0 auto;
+
+header {
+	background: url("../img/header.png") no-repeat center fixed;
+	@include background-size(cover);
+	height: 768px;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	//position: relative;
+	bottom: 65px;
+	color: $white;
+	position: static;
+	.text-center {
+		@extend .text-center;
 		position: relative;
-		bottom: 65px;
-		color: $white;
-		.text-center {
-			@extend .text-center;
-			position: relative;
-			top: 200px;
-		}
+		top: 200px;
 	}
-	.text-block {
-		margin: 0 auto;
-		max-width: 60%;
+	h1 {
+		@include font-size(56px);
+		font-family: $ssp-light;
+		margin: 0;
 	}
-	/* media queries */
+
+	h2 {
+		@include font-size(32px);
+	}
 }
-	@media only screen and (max-width: 480px) {
-		#head-bar {
-			display: none;
-			li {
-				margin: 0 2.5%;
-			}
-		}
+.text-block {
+	margin: 0 auto;
+	max-width: 60%;
+}
+
+#about {
+	p {
+		max-width: 549px;
+		margin: auto;
 	}
+}
+
+footer {
+	background-color: $light-red;
+	p {
+		text-align: center;
+		color: white;
+		vertical-align: middle;
+		padding: 30px;
+		margin: 0;
+	}
+	a {
+		color: white;
+	}
+}
