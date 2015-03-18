@@ -461,6 +461,10 @@ header h2 {
   font-size: 2rem;
 }
 
+section h1 {
+  text-align: center;
+}
+
 .works {
   background: url("../img/at-work.JPG") no-repeat center fixed;
   height: 500px;
@@ -529,6 +533,18 @@ nav img {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 5px;
+}
+
+.work-title {
+  background: #533841;
+  height: 250px;
+  text-align: center;
+}
+.work-title h1 {
+  color: white;
+  font-size: 3em;
+  position: relative;
+  top: 100px;
 }
 
 a {
