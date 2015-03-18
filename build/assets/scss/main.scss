@@ -70,7 +70,7 @@ header {
 }
 
 .row{
-    margin: 0 0 20px 0;
+    margin: 0 0 50px 0;
 }
     
 .text-block {
@@ -119,9 +119,13 @@ nav {
     display: inline-block;
     
     .content{
-        height: 225px;
-        background-color: $light-red;
-        opacity: .8;
+        height: 250px;
+        background-color: white;
+        transition: opacity .3s;
+    }
+    
+    .content:hover{
+        opacity: .5;
     }
     
     .captions{
@@ -135,6 +139,26 @@ nav {
         }
     }
 } 
+
+a{
+        text-decoration: none;
+}
+
+.more{
+    height: 50px;
+    width: 200px;
+    background-color: $dark-red;
+    margin-top: 55px;
+    padding: 0px;
+    transition: opacity 0.2s;
+    color: black;
+    
+    
+}
+
+.more:hover{
+    opacity: .8;
+}
 
 .contact-links{
      
