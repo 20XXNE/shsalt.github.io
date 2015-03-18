@@ -220,6 +220,15 @@ footer {
     width: 200px;
 }
 
+.resume img{
+    transition: opacity .3s;
+}
+
+.resume img:hover{
+    color: blue;
+    opacity: .6;
+}
+
 /* media queries */
 
 @media only screen and (max-width: 1000px){
