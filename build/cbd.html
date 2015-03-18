@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cristian Ramirez | Developer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Cristian Ramirez">
+    <link rel="author" href="humans.txt"/>
+    <link href="assets/css/styles.css" rel="stylesheet"/>
+    <link href="assets/css/boxer.css" rel="stylesheet"/>
+</head>
+<body>
+    <header class="work-title">
+        <div id="head-bar">
+        <img src="assets/img/crissinlogo.png"> 
+        <nav role="navigation">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="index.html#about"><li>About</li></a>
+                <a href="work.html"><li>Work</li></a>
+                <a href="index.html#contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+        </div>
+        <h1>CBDisplays.com Responsification</h1>
+    </header>    
+    <div class="text-block" id="about">
+        <p>This was the second exercise in responsification at my time at Jennifer Web Design.  I again collaborated with the lead front-end developer to tailor the website to mobile devices, this time using a mix of CSS and JQuery.  I used the lessons learned from Acert.org's responsification to speed up development and increase the quality of the end product.  You can view my work on mobile devices <a href="http://cbdisplays.com/" target="_blank">here</a>.</p>
+    </div> 
+    <section class="block"></section>
+    <section class="gallery">
+        <h1>Gallery</h1>
+        <section class="pics">
+            <div class="block-container text-center">
+                <a href="assets/img/cbd-1.jpg" class="boxer" title="Homepage including dropdown navbar" data-gallery="gallery">
+                    <img src="assets/img/cbd-1-thumb.jpg">
+                </a>
+                <a href="assets/img/cbd-2.jpg" class="boxer" title="Content, a gallery, and a footer." data-gallery="gallery">
+                    <img src="assets/img/cbd-2-thumb.jpg">
+                </a>  
+                <a href="assets/img/cbd-3.jpg" class="boxer" title="Responsive contact form" data-gallery="gallery">
+                    <img src="assets/img/cbd-3-thumb.jpg">
+                </a>
+            </div>    
+        </section>
+    </section>
+        <footer><p>Built by Cristian Ramirez | Site &amp; Logo Design by Nicole Overman and Andrea Galvan | Work references available upon request</p></footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="assets/js/boxer.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".boxer").boxer();
+    });
+    </script>
+</body>
+</html>

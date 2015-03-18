@@ -172,7 +172,7 @@ a{
     margin-top: 55px;
     padding: 0px;
     transition: opacity 0.2s;
-    color: black; 
+    color: white; 
 }
 
 .more:hover{
@@ -209,6 +209,15 @@ footer {
 	a {
 		color: white;
 	}
+}
+
+.projects p{
+    font-size: 1.25em;
+}
+
+.pics img{
+    height: 300px;
+    width: 200px;
 }
 
 /* media queries */
