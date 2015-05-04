@@ -6,6 +6,10 @@
   font-family: "Source Sans Pro Light";
   src: url("../fonts/SourceSansPro-Light.ttf");
 }
+@font-face {
+  font-family: "Baron Neue";
+  src: url("../fonts/Baron-Neue.otf");
+}
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
