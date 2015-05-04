@@ -31,7 +31,7 @@ body {
 
 
 header{
-	background: url("../img/header.png") no-repeat center fixed;
+	background: url("../img/at-work.JPG") no-repeat center fixed;
 	@include background-size(cover);
 	height: 768px;
 	background-repeat: no-repeat;
@@ -70,9 +70,11 @@ section h1{
 }
 
 .works{
-        background: url("../img/at-work.JPG") no-repeat center fixed;
+        background: no-repeat center fixed;
+        @include background-size(cover);
         height: 500px;
         opacity: .9;
+        background-image:  url("../img/pi.jpg");
 }
 
 .row{
@@ -123,11 +125,14 @@ nav {
     height: 275px;
     width: 33%;
     display: inline-block;
-    
+   
+        
     .content{
         height: 250px;
         background-color: white;
         transition: opacity .3s;
+        border-style: solid;
+        border-color: $light-red; 
     }
     
     .content:hover{
@@ -142,6 +147,7 @@ nav {
             margin-top: 0px;
             margin-bottom: 0px;
             padding: 5px;
+            color: white;
         }
     }
 } 
@@ -241,7 +247,7 @@ footer {
     .content-block{
         display: block;
         margin: 0 auto 10px auto;
-        width: 250px;
+        width: 260px;
     }
 }
     

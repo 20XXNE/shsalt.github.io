@@ -429,7 +429,7 @@ body {
 }
 
 header {
-  background: url("../img/header.png") no-repeat center fixed;
+  background: url("../img/at-work.JPG") no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -468,9 +468,14 @@ section h1 {
 }
 
 .works {
-  background: url("../img/at-work.JPG") no-repeat center fixed;
+  background: no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 500px;
   opacity: .9;
+  background-image: url("../img/pi.jpg");
 }
 
 .row {
@@ -523,6 +528,8 @@ nav img {
   height: 250px;
   background-color: white;
   transition: opacity .3s;
+  border-style: solid;
+  border-color: #855967;
 }
 .content-block .content:hover {
   opacity: .5;
@@ -535,6 +542,7 @@ nav img {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 5px;
+  color: white;
 }
 
 .work-title {
@@ -620,7 +628,7 @@ footer a {
   .content-block {
     display: block;
     margin: 0 auto 10px auto;
-    width: 250px;
+    width: 260px;
   }
 }
 @media only screen and (max-width: 480px) {
